@@ -14,7 +14,7 @@ import TwitterIcon from "../components/Icon/TwitterIcon";
 import aiTestimonialImage from "../images/generativeai.png";
 import aiImageOne from "../images/generativeai-1.png";
 import aiImageTwo from "../images/generativeai-2.png";
-import heroImageMediaLab from "../images/media-lab.webp";
+import heroImageMediaLab from "../images/media-lab.jpg";
 import porfolioImageBlueprint from "../images/portfolio/portfolio-blueprint.jpg";
 import porfolioImageCoralTrack from "../images/portfolio/portfolio-coral-track.jpg";
 import porfolioImageGenerativeAi from "../images/portfolio/portfolio-generative-ai.jpg";
@@ -136,7 +136,7 @@ export const aboutData: About = {
       Icon: BuildingOffice2Icon,
     },
 
-    { label: "Age", text: "21", Icon: CalendarIcon },
+    // { label: "Age", text: "21", Icon: CalendarIcon },
     { label: "Location", text: "Taipei, Taiwan", Icon: MapIcon },
   ],
 };
@@ -623,7 +623,7 @@ export const experience: TimelineItem[] = [
 export const skill: TimelineItem[] = [
   {
     date: "",
-    location: "Mandarin, English, Japanese",
+    location: "Mandarin, English",
     title: "Language",
     content: (
       <div className="flex flex-col gap-4">
@@ -631,7 +631,7 @@ export const skill: TimelineItem[] = [
           {/* English: TOEIC: 925, TOEFL: 91, International volunteer, English
           tutor, School international affair department volunteering */}
         </p>
-        <p>
+        {/* <p>
           Understanding in Mandarin, English, and basic Japanese give me chance
           to actively participate in diverse international volunteer programs
           and serve as an English tutor. These experiences have not only honed
@@ -657,18 +657,17 @@ export const skill: TimelineItem[] = [
           expanding my linguistic horizons and making meaningful contributions
           to further enhance communication and collaboration in diverse
           environments.
-        </p>
+        </p> */}
       </div>
     ),
   },
   {
     date: "",
-    location: `FastAPI, Django, Node.js, Express.js, Fastify, Colyseus, 
-      Socket Programming, Web Sockets, RESTful, GraphQL`,
-    title: "Backend Development",
+    location: `C, Python, Matlab, Javascript, Typescript, C++, Java, PHP`,
+    title: "Computer Language",
     content: (
       <div className="flex flex-col gap-4">
-        <p>
+        {/* <p>
           For me backend development is like a vivid book about what I learned
           from courses. In networking, I have to consider IP addressing, TCP/IP,
           UDP, DNS, and HTTP, according to need.
@@ -687,36 +686,42 @@ export const skill: TimelineItem[] = [
           Recently I have extend my backend knowledge to learn MLOps and DevOps,
           as working on deploy model on API and collect data continuously with
           distributed task scheduler such Airflow.
-        </p>
+        </p> */}
       </div>
     ),
   },
   {
     date: "",
-    location: `React.js, Next.js, Redux-Saga, Zustand, React Query, 
-    TailwindCSS, Styled Components`,
+    location: ``,
     // , Babylon.js, Three.js, WebGL, WebGPU
-    title: "Frontend Development",
+    title: "Software Development",
     content: (
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-2">
         <p>
-          I enjoy frontend a lot, in past I develop in React.js since the team I
-          work with it. But recently I start to go with Next.js, since it
-          provide more flexibility and better performance and SSR gradually
-          become the go to standard in web development.
+          <span className="h-16 w-16">&#9679;</span>Full-Stack Web Development:
+          React, Django, FastAPI, Flask, SocketIO, HTML, CSS
         </p>
         <p>
-          In styling, I usually work with styled component, usually I got layout
-          from Figma, and implement it with styled component. I also use
-          TailwindCSS these days, when I am doing my own project or prototype
-          that no design layout is provided. I found it super convenient and
-          easy to use.
+          <span className="h-16 w-16">&#9679;</span>Artifical
+          Intelligence:LLaMA-2, Langchain, OpenAI, Transfomers
         </p>
         <p>
+          <span className="h-16 w-16">&#9679;</span>Machine and Deep
+          Learning:Tensorflow, Pytorch, Transformers, scikit-learn
+        </p>
+        <p>
+          <span className="h-16 w-16">&#9679;</span>Data Visualization: Mapbox,
+          DeckGL, QGIS, Open Street Map
+        </p>
+        <p>
+          <span className="h-16 w-16">&#9679;</span>Database: MySQL, PostgreSQL,
+          MongoDB, Pinecone (Vector Database), Neo4j
+        </p>
+        {/* <p>
           In CityScope project, there are many visualizations relating to urban,
           We usually doing the stack with React.js, Redux-Saga, DeckGL, and
           Mapboxgl to integrate with backend and database.
-        </p>
+        </p> */}
       </div>
     ),
   },
@@ -753,20 +758,20 @@ export const skill: TimelineItem[] = [
   //     </div>
   //   ),
   // },
-  {
-    date: "",
-    location: "Babylon.js, Three.js, Unity",
-    title: "Three Dimension Modeling & Rendering",
-    content: (
-      <div className="flex flex-col gap-4">
-        <p>
-          I also try 3D rendering before, and there are some difference between
-          WebGL and Unity Engine, I more prefer to use Three.js for the the
-          convenience of integrating with React.js.
-        </p>
-      </div>
-    ),
-  },
+  // {
+  //   date: "",
+  //   location: "Babylon.js, Three.js, Unity",
+  //   title: "Three Dimension Modeling & Rendering",
+  //   content: (
+  //     <div className="flex flex-col gap-4">
+  //       <p>
+  //         I also try 3D rendering before, and there are some difference between
+  //         WebGL and Unity Engine, I more prefer to use Three.js for the the
+  //         convenience of integrating with React.js.
+  //       </p>
+  //     </div>
+  //   ),
+  // },
 ];
 
 /**
