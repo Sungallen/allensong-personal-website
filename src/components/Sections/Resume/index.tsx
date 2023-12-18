@@ -1,11 +1,11 @@
 import { FC, memo } from "react";
 
 import {
+  awards,
   education,
   experience,
   SectionId,
   skill,
-  awards,
 } from "../../../data/data";
 import Section from "../../Layout/Section";
 import ResumeSection from "./ResumeSection";
