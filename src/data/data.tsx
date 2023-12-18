@@ -42,7 +42,7 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: "Johnson Tseng",
+  title: "Allen Yu-Lun Song",
   description: "Johnson Tseng's personal website",
 };
 
@@ -71,15 +71,17 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I am Johnson Tseng (曾紘遠), a college student from Taipei. I am now
+        I am Allen Yu-Lun Song (宋宇倫), a college student from Taipei. I am now
         interesting in{" "}
-        <strong className="text-stone-100">Full Stack Development</strong>,
-        currently working at{" "}
         <strong className="text-stone-100">
-          City Science Taipei, MIT Media Lab
+          Large Language Models, especially for application on City{" "}
+        </strong>
+        , currently working as a researcher in{" "}
+        <strong className="text-stone-100">
+          City Science Lab @ Taipei Tech
         </strong>
       </p>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+      {/* <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         I often use <strong className="text-stone-100">johnsonafool</strong> as
         my account user name or ID, inspired by the quote of Steve Jobs{" "}
         <strong className="text-stone-100">Stay hungry. Stay foolish. </strong>
@@ -91,7 +93,7 @@ export const heroData: Hero = {
         <strong className="text-stone-100">Outdoor Activities</strong>,
         immersing on{" "}
         <strong className="text-stone-100">Postmodernist Literature</strong>.
-      </p>
+      </p> */}
     </>
   ),
   actions: [
@@ -118,8 +120,8 @@ export const aboutData: About = {
   // description: `I am a senior year student currently working in MIT Media Lab Lab @ Taipei,
   // My previous programming experience including  C, C#, Python, TypeScript, SQL, Git, Docker, React.js, GraphQL,
   // Tensorflow, FastAPI, Unity`,
-  description: `As a senior student, I am currently working at City Science Lab (CSL) where my role revolves around 
-  leveraging technology to revolutionize the communication interface between urban environments and engineering. 
+  description: `I am currently working as a researcher at City Science Lab @ Taipei Tech(CSL) where my role revolves around 
+  leveraging technology to revolutionize smart cities. 
   At CSL, I conduct comprehensive surveys, engage in extensive research, and spearhead initiatives aimed at enhancing 
   the seamless integration of cutting-edge technologies in urban development`,
   aboutItems: [
@@ -133,15 +135,7 @@ export const aboutData: About = {
       text: "City Science Lab (CSL) @ Taipei",
       Icon: BuildingOffice2Icon,
     },
-    {
-      label: "Interests",
-      text: "Startups, Cooking, Fitness, Reading, Traveling, Volunteering",
-      Icon: SparklesIcon,
-    },
-    {
-      label: "Personality",
-      text: "ESFJ-A",
-    },
+
     { label: "Age", text: "21", Icon: CalendarIcon },
     { label: "Location", text: "Taipei, Taiwan", Icon: MapIcon },
   ],
@@ -423,11 +417,10 @@ export const education: TimelineItem[] = [
   {
     date: "June 2023",
     location: "National Taipei University of Technology",
-    title:
-      "Bachelor Major in Engineering Science, Double Major in Computer Science",
+    title: "Bachelor of Science in Electronic and Computer Engineering",
     content: (
       <div className="flex flex-col gap-4">
-        <p>
+        {/* <p>
           During my time at university, I have acquired a several skill includes
           understanding in programming languages like TypeScript, Python, and
           C++ and C#. By making course homework or collaborating with peers in
@@ -446,16 +439,127 @@ export const education: TimelineItem[] = [
           competitions, which broadened my skill set, and strengthened my
           ability to collaborate, communicate effectively, and thrive in diverse
           environments.
-        </p>
+        </p> */}
       </div>
     ),
   },
 ];
-
+export const awards: TimelineItem[] = [
+  {
+    date: "2023 Sep",
+    location:
+      "Organziers: City Science Lab @ Taipei Tech, Foxconn; Co-organizer: MIT Media Lab",
+    title: "First Prize in 2023 Science and AI Hackathon - AI on Wheels",
+    content: (
+      <div className="flex flex-col gap-4">
+        {/* <p>
+          As a college researcher selected by National Science and Technology
+          Council, I conducted a biomedical engineering project which is to
+          integrate physiological monitoring functions(heart rate, blood
+          pressure and body temperature, etc.) to a mouse in order to analyze
+          users' health conditions.
+        </p>
+        <p>
+          I actively contributed to design Digital Signal Algorithms like
+          Intrinsic Mode Function (IMF), Infinite Impulse Filter (IIR), and
+          Moving Average Filter (MAF) Algorithms to remove Photoplethysmography
+          (PPG) artifact noise.
+        </p>
+        <p>
+          Besides, I trained a Deep Neural Network to predict body temperature
+          through skin, ambient temperature and humidity
+        </p>
+        <p>
+          Skills: Deep Learning and Machine Learning, Digital Signal Processing,
+          Algorithms
+        </p> */}
+      </div>
+    ),
+  },
+  {
+    date: "2022 June",
+    location: "National Taipei University of Technology",
+    title: "First Prize in College Project Competition",
+    content: (
+      <div className="flex flex-col gap-4">
+        {/* <p>
+          Working with a innovative projects including CityGPT, Agent-Based
+          Modeling with LLMs, dedicating on laveraging large language models
+          with real-time urban data.
+        </p>
+        <p>
+          My research includes large language models, data science(urban data).
+          I have developed the system that can overcomes the challenge of
+          spatial urban data query and analysis, and vectorize urban data in
+          real-time.
+        </p>
+        <p>
+          Skills: Large Language Models, Natural Language Processing, Data
+          Science and Engineering
+        </p> */}
+      </div>
+    ),
+  },
+  {
+    date: "June 2022 - Feb 2023",
+    location: "National Science and Technology Council",
+    title: "Selected as a College Researcher",
+    content: (
+      <div className="flex flex-col gap-4">
+        {/* <p>
+          Working with a insightful project in City Science, CityScope,
+          dedicating to leveraging data to solve complex problems in modern
+          cities. The CityScope project aimed to analyze vast amounts of urban
+          data, ranging from transportation patterns to energy consumption, in
+          order to gain insights into city dynamics and develop innovative
+          solutions.
+        </p>
+        <p>
+          My work include data analysis, data engineering, machine learning,
+          deep learning and visualization tools to uncover meaningful patterns
+          and trends. This allowed myself to gain insights into the functioning
+          of the city, detect inefficiencies, and propose data-driven solutions
+          for urban planning and development. Working here not only exposed me
+          to cutting-edge research methodologies but also fostered a culture of
+          collaboration and innovation.
+        </p>
+        <p>
+          Skills: Problem Solving, Collaboration, Interdisciplinary Research,
+          Data Engineering, Data Science, Predictive Modeling, Edge Computing
+          Programming, Web Development
+        </p> */}
+      </div>
+    ),
+  },
+];
 export const experience: TimelineItem[] = [
   {
-    date: "March 2022 - Present",
-    location: "City Science Taipei, MIT Media Lab",
+    date: "July 2023 - Present",
+    location: "City Science @ Taipei Tech",
+    title: "Researcher",
+    content: (
+      <div className="flex flex-col gap-4">
+        <p>
+          Working with a innovative projects including CityGPT, Agent-Based
+          Modeling with LLMs, dedicating on laveraging large language models
+          with real-time urban data.
+        </p>
+        <p>
+          My research includes large language models, data science(urban data).
+          I have developed the system that can overcomes the challenge of
+          spatial urban data query and analysis, and vectorize urban data in
+          real-time.
+        </p>
+        <p>
+          Skills: Large Language Models, Natural Language Processing, Data
+          Science and Engineering
+        </p>
+      </div>
+    ),
+  },
+  {
+    date: "March 2022 - June 2023",
+    location: "City Science @ Taipei Tech",
     title: "Undergraduate Research Opportunity Program",
     content: (
       <div className="flex flex-col gap-4">
@@ -485,78 +589,31 @@ export const experience: TimelineItem[] = [
     ),
   },
   {
-    date: "June 2022 - June 2022",
-    location: "National Taipei University of Technology",
-    title: "President of School Programming Club",
+    date: "June 2022 - Feb 2023",
+    location: "National Science and Technology Council",
+    title: "College Researcher",
     content: (
       <div className="flex flex-col gap-4">
         <p>
-          As the President of NTUT Programming Club (a.k.a NPC), I conducted
-          several events (workshop, club gathering, tech talk etc.) and
-          programming courses. In teaching, I like to start with fundamental
-          concepts in plain words then apply skills in group project, through
-          project based learning, fellows learn how to use what they learned in
-          real case, and consolidate the knowledge by debugging and develop
-          required features. Aside for programming stuff, I also organized few
-          social events and activities to promote the club and attract new
-          members.
+          As a college researcher selected by National Science and Technology
+          Council, I conducted a biomedical engineering project which is to
+          integrate physiological monitoring functions(heart rate, blood
+          pressure and body temperature, etc.) to a mouse in order to analyze
+          users' health conditions.
         </p>
         <p>
-          Besides, I actively contributed to various club owned projects, I
-          collaborated with core club members on software development
-          initiatives, ranging from mobile applications (Campus Course App, TAT)
-          to web-based systems (Club Official Site) and social app chatbot
-          service (Discord Bot, Line Bot).
+          I actively contributed to design Digital Signal Algorithms like
+          Intrinsic Mode Function (IMF), Infinite Impulse Filter (IIR), and
+          Moving Average Filter (MAF) Algorithms to remove Photoplethysmography
+          (PPG) artifact noise.
         </p>
         <p>
-          One of my significant accomplishments was serving as lead for TAT,
-          which is an App developed and maintained by programming club.
-          Recognizing the need for efficient project management and arrangement,
-          I implemented agile development methodologies, enabling our team to
-          adapt to changing requirements and deliver high-quality results in a
-          timely manner. By effectively coordinating the efforts of team members
-          and fostering effective communication, we were able to deliver a
-          feature-rich beta version of the app.
+          Besides, I trained a Deep Neural Network to predict body temperature
+          through skin, ambient temperature and humidity
         </p>
         <p>
-          Skills: Leadership, Team Management, Project Management, Agile
-          Development, Software Development
-        </p>
-      </div>
-    ),
-  },
-  {
-    date: "March 2022 - August 2022",
-    location: "Open HCI",
-    title: "Open HCI 2022 Technical Teaching Assistant",
-    content: (
-      <div className="flex flex-col gap-4">
-        <p>
-          Open HCI (人機互動工作坊) is a prestigious workshop in the field of
-          Human-Computer Interaction in Taiwan. As a Technical Teaching
-          Assistant Department, I collaborate with other TAs in organizing the
-          events regarding to technical sides, such as P5.js Arduino, Computer
-          Vision. Try to making these differentiate from typical school course
-          by leading with real case implementation.
-        </p>
-        <p>
-          During the workshop, TAs were assigned with few fellows to cooperate
-          making project, I provide guidance and support relating to technical
-          aspect to the group participants, ensuring their understanding and
-          able to further utilizing with their ideas on HCI.
-        </p>
-        <p>
-          Throughout the workshop progress, I emphasized the importance of
-          user-centered design and usability testing that I learned from Media
-          Lab. Guiding the participants in conducting user research and
-          incorporating user feedback into the iterative design process. By
-          incorporating human factors and usability principles, we ensured that
-          the final project provided a seamless and intuitive experience for
-          users.
-        </p>
-        <p>
-          Skills: Leadership, Team Management, Project Management, Design
-          Thinking
+          Skills: Deep Learning and Machine Learning, Digital Signal Processing,
+          Algorithms
         </p>
       </div>
     ),
